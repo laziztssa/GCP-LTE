@@ -1,4 +1,4 @@
-# import all modules
+# import all modules  
 import airflow
 from airflow import DAG
 from datetime import timedelta
@@ -12,7 +12,7 @@ from airflow.providers.google.cloud.operators.dataproc import (
 
 # define the variables
 PROJECT_ID = "GCP-DEMO-LTE"
-REGION = "us-east1-c"
+REGION = "us-east1"
 CLUSTER_NAME = "cluster-lte-demo"
 COMPOSER_BUCKET = "us-central1-cluster-demo-lt-4bc9a194-bucket" ## change this 
 
