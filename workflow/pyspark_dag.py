@@ -72,7 +72,8 @@ with DAG(
         task_id="start_cluster",
         project_id=PROJECT_ID,
         region=REGION,
-        cluster_name=CLUSTER_NAME,
+        cluster_name=CLUSTER_NAME
+       start_if_needed=True,
     )
 
     pyspark_task_1 = DataprocSubmitJobOperator(
